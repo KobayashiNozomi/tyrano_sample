@@ -1,6 +1,6 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="aaa走るか寝るかするメロス"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
@@ -18,6 +18,7 @@
 
 [link target=*tag_sleep] →寝る [endlink][r]
 [link target=*tag_run] →走る [endlink][r]
+[link target=*tag_no_res] →何もしない [endlink][r]
 [s]
 
 *tag_sleep
@@ -42,5 +43,17 @@
 陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
 【 GOOD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_no_res
+
+[cm]
+
+[bg storage=sleep_animal_cat.png time=500]
+
+メロスは何もしなかった。[r]
+
+【 normal END 】[l][cm]
 
 [jump target=*start]
